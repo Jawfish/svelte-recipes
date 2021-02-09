@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "svelte-recipes",
+  "description": "Svelte Recipes",
   "version": "0.0.1",
   "scripts": {
     "watch:css": "postcss src/assets/global.pcss -o static/global.css -w",
