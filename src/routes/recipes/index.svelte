@@ -4,11 +4,12 @@
 
 <script lang="ts">
 	import slugify from "../../../node_modules/slugify/slugify";
-
 	import type { Recipe as RecipeType } from "../../types";
+	import { current } from "../../stores";
 	import RecipeCardComponent from "../../components/RecipeCard/RecipeCardComponent.svelte";
 	const recipes: RecipeType[] = data;
 	const recipe = recipes[0];
+	current.set("recipes");
 	let searchTerm: string = "";
 	$: filteredList = recipes.filter(
 		(item) =>
