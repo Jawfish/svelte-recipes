@@ -11,10 +11,3 @@
 		{name}
 	</span>
 </div>
-
-<!-- {#each recipe.ingredients as ingredient}
-<Ingredient
-	amount={ingredient.amount}
-	name={ingredient.name}
-/>
-{/each} -->

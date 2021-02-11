@@ -19,11 +19,11 @@
 </script>
 
 <svelte:head>
-	<title>Recipes</title>
+	<title>Svelte Recipes - Recipes</title>
 </svelte:head>
 
 <main>
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
 		<div class="max-w-lg w-full lg:max-w-xs mx-auto pb-8">
 			<label for="search" class="sr-only">Search</label>
 			<div class="relative">

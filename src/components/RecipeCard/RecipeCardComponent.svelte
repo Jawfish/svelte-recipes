@@ -5,6 +5,7 @@
 	import { fade } from "svelte/transition";
 
 	export let recipe: Recipe;
+	export let big: boolean = false;
 </script>
 
 <div
@@ -17,7 +18,7 @@
 		{recipe.recipeName}
 	</h3>
 	<div
-		class="h-48 background-image "
+		class="{big ? 'h-96' : 'h-48'} background-image"
 		style="background-image: url('{recipe.thumbnail}')"
 	/>
 </div>
@@ -25,6 +26,7 @@
 <style>
 	.background-image {
 		background-repeat: no-repeat;
+		background-position: 50%;
 		background-size: cover;
 		opacity: 80%;
 		/* filter: grayscale(0.3); */
